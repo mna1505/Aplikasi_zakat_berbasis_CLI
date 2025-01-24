@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 // Fungsi untuk menghitung zakat mal perak
@@ -19,5 +20,6 @@ int main (){
   cout << "Masukkan harga perak sekarang dalam per gram : ";
   cin >> hargaPerak;
   double zakatMal = hitungZakatMalPerak(totalHarta, hargaPerak);
+  cout << fixed << setprecision (2);
   cout << "Zakat mal yang harus anda keluarkan : Rp" << zakatMal << endl;
 }
